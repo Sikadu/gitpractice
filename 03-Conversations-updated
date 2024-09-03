@@ -8,5 +8,5 @@ echo $Person2: Hi ${Person1}, How are you ?
 echo $Person1: I'm good thanks, How about you ?
 echo $Person2: I'm good too. What are you doing now ?
 echo $Person1: Suresh..currently i'm learing devops
-echo $Person2: oh! whats the institue name ?
-echo $Person1: Joindevops.com 
+echo $Person2: oh! thats great $Person1
+echo $Person1: Thank you
