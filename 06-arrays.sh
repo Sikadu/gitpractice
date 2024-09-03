@@ -2,4 +2,4 @@
 
 FRUITS="${APPLE, ORANGE, MANGO, BANANA}"
 
-echo " FIRST FRUIT IS : ${0}"
+echo " FIRST FRUIT IS : ${FRUITS[0]}"
