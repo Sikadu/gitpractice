@@ -7,6 +7,6 @@ echo $PERSON1: Hi ${PERSON2}
 echo $PERSON2: Hi ${PERSON1}, How are you ?
 echo $PERSON1: $PERSON2 I'm good thanks, How about you ?
 echo $PERSON2: I'm good too. What are you doing now ?
-echo $PERSON1: Suresh..currently i'm learing devops
+echo $PERSON1: Suresh, Currently i'm learing devops
 echo $PERSON2: oh! thats great $PERSON1
 echo $PERSON1: Thank you
