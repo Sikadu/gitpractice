@@ -15,15 +15,15 @@ echo " user have root access "
 
 fi
 
-dnf list installed mysql
+dnf list installed git
 
 if [[ $? -ne 0 ]]
 
 then
-    echo " please install mysql "
-    dnf install mysql -y
+    echo " please install git "
+    dnf install git -y
     else
-    echo " my sql not installed "
+    echo " my git not installed "
     exit 1
 
 fi
