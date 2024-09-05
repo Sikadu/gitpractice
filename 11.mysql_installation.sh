@@ -12,6 +12,7 @@ exit 1
 else 
 
 echo " user have root access "
+exit 1
 
 fi
 
