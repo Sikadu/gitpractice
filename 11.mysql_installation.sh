@@ -1,9 +1,16 @@
 #!/bin/bash
 
-USERID=$(id -u)
+USERID = $(id-u)
 
 if [ $USERID -ne 0 ]
-then
-    echo "please run the script with root priveleges"
-    exit 1
+
+then 
+
+echo " user have root access to run the script "
+exit 1
+
+else 
+
+echo " user have root access "
+
 fi
