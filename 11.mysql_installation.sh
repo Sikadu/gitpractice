@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 USERID=$(id -u)
 
@@ -19,7 +19,7 @@ then
     echo " please install git "
     dnf install git -y
     else
-    echo " my git not installed "
+    echo " git not installed "
     exit 1
 
 fi
