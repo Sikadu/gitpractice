@@ -36,14 +36,13 @@ then
 echo " sql not installed...going to install "
 dnf install mysql -y
  if [[ $? -ne 0 ]]
+ then
    echo " sql installed successfully"
    else
    echo " sql not installed successfully"
    exit 1
-
- else
+  fi 
+else
     echo " sql already installed "
- exit 1
-fi
 
 fi
