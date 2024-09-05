@@ -15,7 +15,6 @@ fi
 dnf list installed git
 
 if [[ $? -ne 0 ]]
-
 then
     echo " please install git "
     dnf install git -y
