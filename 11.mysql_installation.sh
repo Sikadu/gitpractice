@@ -29,3 +29,16 @@ then
     echo " git already installed "
  fi
 
+dnf list installed mysql
+
+if [[ $? -ne 0 ]]
+then
+echo " sql not installed...going to install "
+dnf install mysql -y
+if [[ $? -ne 0 ]]
+echo " sql installed successfully"
+fi
+else
+echo " sql is not installed successfully...please check it "
+exit 1
+fi
