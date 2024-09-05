@@ -1,26 +1,26 @@
-#!/bin/bash
+!/bin/bash
 
-# USERID=$(id -u)
+USERID=$(id -u)
 
-# if [[ $USERID -ne 0 ]]
+if [[ $USERID -ne 0 ]]
 
-# then 
+then 
 
-# echo " user have root access "
+echo " user have root access "
 
-# exit 1
+exit 1
 
-# fi
+fi
 
-# dnf list installed git
+dnf list installed git
 
-# if [[ $? -ne 0 ]]
-# then
-#     echo " please install git "
-#     dnf install git -y
-#     else
-#     echo " my git not installed "
-#     exit 1
+if [[ $? -ne 0 ]]
+then
+    echo " please install git "
+    dnf install git -y
+    else
+    echo " my git not installed "
+    exit 1
 
-# fi
+fi
 
