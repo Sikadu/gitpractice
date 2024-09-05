@@ -29,5 +29,3 @@ then
     echo " git already installed "
  fi
 
-fi
-
