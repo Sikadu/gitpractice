@@ -18,9 +18,16 @@ if [[ $? -ne 0 ]]
 then
     echo " please install git "
     dnf install git -y
-    else
-    echo " git not installed "
+    if [[ $? -ne 0 ]]
+    then 
+    echo " git installation not done successfully "
     exit 1
+    else
+    echo " git intallation success"
+    fi
+    else
+    echo " git already installed "
+ fi
 
 fi
 
