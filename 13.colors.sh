@@ -1,7 +1,7 @@
 #!/bin/bash
 
 R="\e[31m"
-Y="\e[32m"
+G="\e[32m"
 N="\e[0m"
 
 USERID=$(id -u)
@@ -22,7 +22,7 @@ VALIDATE()
         echo -e " $2 its $R failed $N "
         exit 1
         else
-        echo -e " $2 its $Y success $N "
+        echo -e " $2 its $G success $N "
      fi   
         
 }
