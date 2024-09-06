@@ -2,6 +2,7 @@
 
 R="\e[31m"
 G="\e[32m"
+Y="\e[33m"
 N="\e[0m"
 
 USERID=$(id -u)
@@ -48,6 +49,6 @@ echo " sql not installed...going to install "
 dnf install mysql -y
 VALIDATE $? "installing mysql"
 else
-    echo " sql already installed "
+    echo -e " $Y sql already installed $N "
 
 fi
