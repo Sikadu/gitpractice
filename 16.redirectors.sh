@@ -40,7 +40,7 @@ USAGE()
     exit 1
 }
 
-echo " script started exection at $(date) "
+echo " script started exection at $(date) " | tee -a $LOG_FILE
 
 CHECK_ROOT
 
@@ -49,16 +49,16 @@ then
     USAGE
 fi
 
-for package in $@ git mysql postfix nginx
+for package in $@ #git mysql postfix nginx
 do
-dnf list installed $package
+dnf list installed $package | tee -a $LOG_FILE
 
 if [[ $? -ne 0 ]]
 then
-    echo -e "$R $package is not installed...going to install $package $N"
+    echo -e "$R $package is not installed...going to install $package $N" | tee -a $LOG_FILE
     dnf install $package -y
-    VALIDATE $? "installing $package"
+    VALIDATE $? "installing $package" | tee -a $LOG_FILE
     else
-    echo " $package already installed "
+    echo " $package already installed " | tee -a $LOG_FILE
  fi
 done
