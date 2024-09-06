@@ -3,7 +3,7 @@
 LOGS_FOLDER="\var\log\shell_script"
 SCRIPT_NAME=$(echo $0 | cut -d '.' -f1)
 TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
-LOG_FILE=$LOGS_FOLDER/$SCRIPT_NAME-$TIMESTAMP.log
+LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME-$TIMESTAMP.log"
 mkdir -p $LOGS_FOLDER
 
 R="\e[31m"
@@ -40,13 +40,13 @@ USAGE()
     exit 1
 }
 
-echo -e " $Y script started exection at $(date) $N"
+echo " script started exection at $(date) "
 
 CHECK_ROOT
 
 if [ $# -eq 0 ]
 then
-USAGE
+    USAGE
 fi
 
 for package in $@ git mysql postfix nginx
