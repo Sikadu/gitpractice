@@ -6,7 +6,7 @@ failure(){
     echo "failure at $1:$2"
 }
 
-trap 'failure{"$line"} "$bash_command"' ERR
+trap 'failure "{$line}" "$bash_command"' ERR
 
 echo "Hello World"
 echooo "helo wodrld"
