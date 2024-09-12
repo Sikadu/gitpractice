@@ -11,7 +11,7 @@ echo "source dir $SOURCE_DIR exists"
 fi
 
 
-FILES=$(find $SOURCE_DIR "*.log" -mtime +14)
+FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +14)
 echo "files:$FILES"
 
 
