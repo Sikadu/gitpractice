@@ -4,10 +4,10 @@ SOURCE_DIR=/home/ec2-user/logs
 
 if [ -d $SOURCE_DIR ]
 then
-echo "source dir doesn't exists"
-exit 1
+echo "source dir $SOUCE_DIR exists"
 else
-echo "source dir $SOURCE_DIR exists"
+echo "source dir $SOURCE_DIR doesn't exists"
+exit 1
 fi
 
 
