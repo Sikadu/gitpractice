@@ -44,7 +44,7 @@ if [ -f $ZIP_FILE]
 then
         echo "Successfully zippped files older than $DAYS"
 
- while IFS= read -r    
+ while IFS= read -r file
 do
 echo "Deleting files: $file" 
 rm -rf $file
