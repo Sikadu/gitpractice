@@ -30,7 +30,7 @@ then
 echo "$DEST_DIR doesn't exit pleasse check it"
 fi
 
-FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +14 )
+FILES=$(find ${SOURCE_DIR} -name "*.log" -mtime +14)
 
 echo FILES=$FILES
 
@@ -40,7 +40,7 @@ echo "files are found"
 ZIP_FILE="$DEST_DIR/app-logs-$TIMESTAMP.zip"
 find ${SOUCE_DIR} -name "*.log" -mtime +14 | zip "$ZIP_FILE" -@
 
-if [ ! -f $ZIP_FILE]
+if [ -f $ZIP_FILE]
 then
         echo "Successfully zippped files older than $DAYS"
 
