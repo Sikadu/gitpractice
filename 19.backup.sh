@@ -14,18 +14,18 @@ USAGE() {
     echo "USAGE:: sh 19.backup.sh <SOURCE_DIR> <DEST_DIR> <DAYS>"
     }
 
-if [$# -lt 2] 
+if [ $# -lt 2 ] 
 then
     USAGE
     exit 1
 fi
 
-if [ ! -d $SOURCE_DIR]
+if [ ! -d $SOURCE_DIR ]
 then
 echo "$SOURCE_DIR doesnt exit please check it"
 fi
 
-if [ ! -d $DEST_DIR]
+if [ ! -d $DEST_DIR ]
 then
 echo "$DEST_DIR doesn't exit pleasse check it"
 fi
