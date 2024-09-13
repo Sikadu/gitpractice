@@ -10,7 +10,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-USAGE() {
+USAGE(){
     echo "USAGE:: sh 19.backup.sh <SOURCE_DIR> <DEST_DIR> <DAYS>"
     }
 
