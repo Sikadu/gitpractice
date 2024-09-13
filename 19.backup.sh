@@ -40,7 +40,7 @@ then
     ZIP_FILE="$DEST_DIR/app-logs-$TIMESTAMP.zip"
     find ${SOUCE_DIR} -name "*.log" -mtime +14 | zip "$ZIP_FILE" -@
 
-if [ -f $ZIP_FILE]
+if [[ -f $ZIP_FILE ]]
 then
         echo "Successfully zippped files older than $DAYS"
 
